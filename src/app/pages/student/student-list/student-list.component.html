@@ -1,0 +1,19 @@
+<div>
+    <table>
+        <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>ScheduleId</th>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of studentList">
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.scheduleId}}</td>
+                <td><button (click)="editStudent(item)">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

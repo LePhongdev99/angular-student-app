@@ -1,0 +1,21 @@
+<div [formGroup]="form" >
+    <div>
+        <label>Name: </label>
+        <input formControlName="name" type="text">
+    </div>
+    <div>
+        <label>Email: </label>
+        <input formControlName="email" type="email">
+    </div>
+    <div>
+        <label>address: </label>
+        <input formControlName="address" type="text">
+    </div>
+    <div>
+        <label>ScheduleId: </label>
+        <input formControlName="scheduleId" type="text">
+    </div>
+    <div>
+        <button (click)="submitForm()">Submit</button>
+    </div>
+</div>
